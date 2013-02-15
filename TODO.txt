@@ -1,0 +1,3 @@
+== TODO
+ * Add deploy infra-structure to deploy tek talks to talks.byclosure.com/<app.yaml#application>/ via "cap deploy"
+ * 
