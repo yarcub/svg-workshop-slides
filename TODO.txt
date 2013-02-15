@@ -1,18 +1,19 @@
 == TODO
- * Redo Google logo images (image/google_developers_*png) for Byclosure images
- * Re-style templates accordingly to Byclosure identity (start small)
- * Add deploy infra-structure to deploy tek talks to slides.byclosure.com/<app.yaml#application>/ via "cap deploy"
+ * [JP] Redo Google logo images (image/google_developers_*png) for Byclosure images
+ * [JP] Add Event-like logo for footer, and document in wiki what a speaker must do in order to configure the event logo
+ * [JL] Add deploy infra-structure to deploy tek talks to slides.byclosure.com/<app.yaml#application>/ via "cap deploy"
    - Resulting slides should also be added to a public project in github.com inside Byclosure account.
- * Set a Google Analytics Account to track slides analytics from all projects (Account ID should be part of this project). See base.html
- * Set Google Plus account for Byclosure and change slide_config.js configurations to it
- * Document in this project wiki and in README:
+ * [JL] Set a Google Analytics Account to track slides analytics from all projects (Account ID should be part of this project). See base.html
+ * [JP] Set Google Plus account for Byclosure and change slide_config.js configurations to it [??]
+ * [JP+NR] Document in this project wiki and in README:
    - how should a new talk be created having as its base this template
    - how should an existing talk be updated when this template changes
- * Contact page should be
- * Do a slide all about Byclosure (every presentation should say what's Byclosure after the who I'm I slide)
- * Create a specific example about "Who am I" sliding branding the Byclosure positioning
- * In byclosure website create a Page that should be incorporated in an iframe with what Byclosure wants from technical people (e.g. recruiting openings), the iframe slide should be placed after the Byclosure presentation
- * Extend Contact information slide with Byclosure contacts and offering to answer technical questions using the html5@byclosure.com email or mobile@byclosure.com email
+ * [JP] Add a Byclosure Contact page (Thank you slide)
+ * [JP] Create a specific example about "Who am I" sliding branding the Byclosure positioning
+ * [JP] Do a slide all about Byclosure (every presentation should say what's Byclosure after the who I'm I slide)
+ * [JP] Extend about Byclosure slide to have a part that is retrieved by an iframe with what Byclosure wants from technical people (e.g. recruiting openings), the iframe slide should be placed inside the Byclosure what
+ * [JP] Extend Contact information slide with Byclosure contacts and offering to answer technical questions using the html5@byclosure.com email or mobile@byclosure.com email
+ * [CR+JP] Re-style templates accordingly to Byclosure identity (start small)
    
 == DONE
  * Replace all "Google" mentions to "Byclosure"
