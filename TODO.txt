@@ -1,3 +1,13 @@
 == TODO
- * Add deploy infra-structure to deploy tek talks to talks.byclosure.com/<app.yaml#application>/ via "cap deploy"
- * 
+ * Redo Google logo images (image/google_developers_*png) for Byclosure images
+ * Re-style templates accordingly to Byclosure identity (start small)
+ * Add deploy infra-structure to deploy tek talks to slides.byclosure.com/<app.yaml#application>/ via "cap deploy"
+   - Resulting slides should also be added to a public project in github.com inside Byclosure account.
+ * Set a Google Analytics Account to track slides analytics from all projects (Account ID should be part of this project). See base.html
+ * Set Google Plus account for Byclosure and change slide_config.js configurations to it
+ * Document in this project wiki and in README:
+   - how should a new talk be created having as its base this template
+   - how should an existing talk be updated when this template changes
+   
+== DONE
+ * Replace all "Google" mentions to "Byclosure"
