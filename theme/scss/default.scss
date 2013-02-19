@@ -897,6 +897,10 @@ article.smaller {
     border-bottom: none;
     font-size: 16px; 
   }
+  > .tek-contacts > a {
+    color: #fff;
+    border-bottom: none;
+  }
 }
 
 aside.gdbar {
@@ -1098,4 +1102,9 @@ aside.gdbar {
   pre, code {
     font-family: monospace !important;
   }
+}
+.g-reference {
+  -webkit-box-pack: center;
+  font-size: 16px;
+  color: #8f0e15;
 }

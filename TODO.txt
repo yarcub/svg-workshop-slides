@@ -4,7 +4,7 @@
  * [JL] Add deploy infra-structure to deploy tek talks to slides.byclosure.com/<app.yaml#application>/ via "cap deploy"
    - Resulting slides should also be added to a public project in github.com inside Byclosure account.
  * [JL] Set a Google Analytics Account to track slides analytics from all projects (Account ID should be part of this project). See base.html
- * [JP] Set Google Plus account for Byclosure and change slide_config.js configurations to it [??] see which is the correct email to be used??? and redo cover image (catarina)
+ * [JP] Set Google Plus account for Byclosure and change slide_config.js configurations to it [??] see which is the correct email to be used??? and redo cover image (CR)
  * [JP] Set Twitter account for byclosure and update contact slide -- DONE
  * [JP+NR] Document in this project wiki and in README:
    - how should a new talk be created having as its base this template
@@ -14,8 +14,9 @@
  * [JP] Do a slide all about Byclosure (every presentation should say what's Byclosure after the who am I slide)
  * [JP] Extend about Byclosure slide to have a part that is retrieved by an iframe with what Byclosure wants from technical people (e.g. recruiting openings), the iframe slide should be placed inside the Byclosure what
  * [JP] Extend Contact information slide with Byclosure contacts and offering to answer technical questions using the html5@byclosure.com email or mobile@byclosure.com email
+ * [CR+JP] Rebrand initial slide with byclosure tech talks branding
  * [CR+JP] Re-style templates accordingly to Byclosure identity (start small)
- * [JP] Add a reference in the first page to the open source project http://code.google.com/p/io-2012-slides/
+ * [JP] Add a reference in the first page to the open source project http://code.google.com/p/io-2012-slides/ -- DONE
    
 == DONE
  * Replace all "Google" mentions to "Byclosure"
