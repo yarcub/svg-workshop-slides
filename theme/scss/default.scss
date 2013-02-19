@@ -1108,3 +1108,33 @@ aside.gdbar {
   font-size: 16px;
   color: #8f0e15;
 }
+
+.byclosure-about {
+  .byclosure-tek {
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    margin-top: 30px;
+  }
+  .byclosure-tek img {
+    width: auto;
+    height: 115px;
+    padding: 10px;
+    display: -webkit-box;
+    box-sizing: border-box;
+  }
+  ul {
+    width: 460px;
+    float: right;
+  }
+}
+.about-me {
+  .speaker-photo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 280px;
+    height: auto;
+  }
+}
