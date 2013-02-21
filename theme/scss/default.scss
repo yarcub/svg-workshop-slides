@@ -14,9 +14,10 @@ $brand-blue: rgb(67, 135, 253);
 $brand-blue-secondary: #3c8ef3;
 $brand-blue-secondary2: #2a7cdf;
 
-$brand-red: rgb(244, 74, 63);
-$brand-red-secondary: #e0543e;
-$brand-red-secondary2: #d94d3a;
+$brand-red: #8f0e15;
+$brand-red-secondary: #e31e25;
+$brand-red-secondary2: #c32026;
+$brand-red-secondary3: #8a181a;
 
 $brand-yellow: rgb(255, 209, 77);
 $brand-yellow-secondary: #f9cc46;
@@ -524,7 +525,7 @@ table {
   th {
     color: white;
     font-size: 18px;
-    @include background(linear-gradient(top, $brand-blue 40%, $brand-blue-secondary2 80%) no-repeat);
+    @include background(linear-gradient(top, $brand-red-secondary 0%, $brand-red-secondary2 43%, $brand-red-secondary3 100%) no-repeat);
   }
 
   td, th {
@@ -860,7 +861,7 @@ article.smaller {
 }
 
 .thank-you-slide {
-  background: $brand-blue !important;
+  background: $brand-red !important;
   color: white;
 
   h2 {
