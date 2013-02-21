@@ -4,7 +4,7 @@
  * [JL] Add deploy infra-structure to deploy tek talks to slides.byclosure.com/<app.yaml#application>/ via "cap deploy"
    - Resulting slides should also be added to a public project in github.com inside Byclosure account.
  * [JL] Set a Google Analytics Account to track slides analytics from all projects (Account ID should be part of this project). See base.html
- * [JP] Set Google Plus account for Byclosure and change slide_config.js configurations to it [??] see which is the correct email to be used??? and redo cover image (CR)
+ * [JP] Set Google Plus account for Byclosure and change slide_config.js configurations to it [??] see which is the correct email to be used??? and redo cover image (CR) -- DONE img can be redone again
  * [JP] Set Twitter account for byclosure and update contact slide -- DONE
  * [JP+NR] Document in this project wiki and in README:
    - how should a new talk be created having as its base this template
