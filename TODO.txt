@@ -1,6 +1,6 @@
 == TODO
  * [JP] Redo Google logo images (image/google_developers_*png) for Byclosure images -- DONE
- * [JP] Add Event-like logo for footer, and document in wiki what a speaker must do in order to configure the event logo
+ * [JP] Add Event-like logo for footer, and document in wiki what a speaker must do in order to configure the event logo -- DONE
  * [JL] Add deploy infra-structure to deploy tek talks to slides.byclosure.com/<app.yaml#application>/ via "cap deploy"
    - Resulting slides should also be added to a public project in github.com inside Byclosure account.
  * [JL] Set a Google Analytics Account to track slides analytics from all projects (Account ID should be part of this project). See base.html
@@ -9,15 +9,16 @@
  * [JP+NR] Document in this project wiki and in README:
    - how should a new talk be created having as its base this template
    - how should an existing talk be updated when this template changes
+   NR revision pending
  * [JP] Add a Byclosure Contact page (Thank you slide) -- DONE (needed to be 2 pages)
- * [JP] - Create a specific example about "Who am I" sliding branding the Byclosure positioning. 
-        - Add wiki note on how to change speaker-photo img
+ * [JP] - Create a specific example about "Who am I" sliding branding the Byclosure positioning. -- DONE
+        - Add wiki note on how to change speaker-photo img -- DONE
  * [JP] Do a slide all about Byclosure (every presentation should say what's Byclosure after the who am I slide) -- DONE
  * [JP] Extend about Byclosure slide to have a part that is retrieved by an iframe with what Byclosure wants from technical people (e.g. recruiting openings), the iframe slide should be placed inside the Byclosure what 
- --- IMPOSSIBLE. NEEDS ANOTHER SOLUTION
+ --- IMPOSSIBLE. NEEDS ANOTHER SOLUTION (currently in another slide)
  * [JP] Extend Contact information slide with Byclosure contacts and offering to answer technical questions using the html5@byclosure.com email or mobile@byclosure.com email -- DONE
- * [CR+JP] Rebrand initial slide with byclosure tech talks branding
- * [CR+JP] Re-style templates accordingly to Byclosure identity (start small)
+ * [CR+JP] Rebrand initial slide with byclosure tech talks branding -- TO DO with more time
+ * [CR+JP] Re-style templates accordingly to Byclosure identity (start small) -- TO DO with more time
  * [JP] Add a reference in the first page to the open source project http://code.google.com/p/io-2012-slides/ -- DONE
    
 == DONE
