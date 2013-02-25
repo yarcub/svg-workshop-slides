@@ -10,6 +10,7 @@
 *.min.css
 #*.min.js
 .sass-cache/*
+node_modules
 
 # Packages #
 ############
