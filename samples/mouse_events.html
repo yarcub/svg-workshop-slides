@@ -1,0 +1,39 @@
+<html>
+<head>
+<style type="text/css">
+	#label{
+		color: black;
+		font-family: sans-serif;
+		font-size: 30px;
+	}
+
+</style>
+</head>
+<body>
+	<svg>
+		<rect id="foo" x="350" y="0" height="100" width="200" fill="yellow" stroke="black" click=""/>
+		<text id="label" x="350" y="150"/>
+	</svg>
+</body>
+<script type="text/javascript">
+	var rect = document.querySelector("#foo");
+	var label = document.querySelector("#label");
+
+	rect.addEventListener('mouseover', function(event){
+		label.textContent = "Over";
+		//SVG DOM, faster
+		rect.width.baseVal.value = 500; 
+	});
+
+	rect.addEventListener('mouseout', function(event){
+		label.textContent = "Out";
+		//HTML DOM, slower, needs to convert string to int
+		rect.setAttribute("width", "200"); 
+	});
+
+	rect.addEventListener('click', function(event){
+		label.textContent = "Click";
+	});
+
+</script>
+</html>

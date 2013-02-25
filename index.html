@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Byclosure Tek Talk</title>
+  <title>SVG 101</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
@@ -23,7 +23,7 @@
       <span><img src="images/byclosure_logo.png"></span>
     </article>
     <article class="flexbox g-reference">
-      <span>HTML5 slide template for Google I/O 2012</span>
+      <span>HTML5 slide template from Google I/O 2012</span>
     </article>
   </slide>
 
@@ -38,10 +38,10 @@
   </slide>
 
   <!--About me slide -->
-  <slide class="about-me">
+  <slide class="about-me" hidden>
     <hgroup>
-      <h2>Speaker's Name</h2>
-      <h3>Job title</h3>
+      <h2>Nuno Rosa</h2>
+      <h3>Senior Software Developer</h3>
     </hgroup>
     <article class="smaller">
       <p>Work experience:</p>
@@ -75,7 +75,7 @@
         <li>A Byclosure foi fundada em 2008 e está baseada em Lisboa. Tem no seu ADN uma natureza Web e Agile.</li>
         <li>Apoiamos os nossos clientes em projectos de inovação complexos e desafiantes em Aplicações Ricas de Internet em HTML5 e abordagens Multi-dispositivo.</li>
         <li>A nossa abordagem à Engenharia de Front-end é feita com um stack tecnológico sobre Google Web Toolkit, integrando com serviços na cloud previamente desenvolvidos ou desenvolvendo esses mesmos serviços em Ruby on Rails ou Java.
-          <div class="build byclosure-tek">
+          <div class="byclosure-tek">
             <img src="images/tek-icons.png">
             <img src="images/device-cloud.png">
             <img src="images/rubyrails-java.png">
@@ -86,7 +86,7 @@
   </slide>
 
   <!-- Byclosure opportunities slide -->
-  <slide>
+  <slide hidden>
     <hgroup>
       <h2>Byclosure Opportunities</h2>
     </hgroup>
@@ -97,342 +97,732 @@
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets that Build</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Agenda</h2>
     </hgroup>
     <article>
-      <p>A list where items build:</p>
       <ul class="build">
-        <li>Pressing 'h' highlights code snippets</li>
-        <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
-        <li>Pressing 'f' toggles fullscreen viewing</li>
-        <li>Pressing 'w' toggles widescreen</li>
-        <li>Pressing 'o' toggles overview mode</li>
-        <li>Pressing 'ESC' toggles off these goodies</li>
-      </ul>
-      <p>Another list, but items fade as they build:</p>
-      <ul class="build fade">
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Bullets</h2>
-    </hgroup>
-    <article>
+        <li>SVG and HTML5</li>
+        <li>Primitives</li>
+        <li>Interaction</li>
+        <li>Animation</li>
+        <li>Tools</li>
       <ul>
-        <li>Titles are formatted as Open Sans with bold applied and font size is set at 45</li>
-        <li>Title capitalization is title case
-          <ul>
-            <li>Subtitle capitalization is title case</li>
-          </ul>
-        </li>
-        <li>Subtitle capitalization is title case</li>
-        <li>Titles and subtitles should never have a period at the end</li>
-      </ul>
     </article>
   </slide>
 
-  <slide>
-    <hgroup>
-      <h2>Slide with (Smaller Font)</h2>
+  <!--
+    SVG and HTML5
+  -->
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/byclosure_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>SVG and HTML5</h2>
     </hgroup>
-    <article class="smaller">
-      <ul>
-        <li>All <a href="http://byclosure.com/">links</a> open in new tabs.</li>
-        <li>To change that this, add <code>target="_self"</code> to the link.</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide hidden>
-    Hidden slides are left out of the presentation.
-  </slide>
+  </slide> 
 
   <slide>
     <hgroup>
-      <h2>Code Slide (with Subtitle Placeholder)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <p>Press 'h' to highlight important sections of code (wrapped in <code>&lt;b&gt;</code>).</p>
-      <pre class="prettyprint" data-lang="javascript">
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    <b>for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }</b>
-  }
-&lt;/script&gt;
-</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Code Slide (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
-      <pre class="prettyprint" data-lang="javascript">
-// Say hello world until the user starts questioning
-// the meaningfulness of their existence.
-function helloWorld(world) {
-  for (var i = 42; --i &gt;= 0;) {
-    alert('Hello ' + String(world));
-  }
-}
-</pre>
-<pre class="prettyprint" data-lang="css">
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-&lt;/style&gt;
-</pre>
-<pre class="prettyprint" data-lang="html">
-&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-  &lt;title>My Awesome Page&lt;/title>
-&lt;/head>
-&lt;body>
-  &lt;p&gt;Hello world&lt;/p&gt;
-&lt;body>
-&lt;/html>
-</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>Point I wanted to make #1</li>
-          <li>Point I wanted to make #2</li>
-          <li>Point I wanted to make #3</li>
-          <li>Example <a href="#">link</a> in notes.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Slide with Speaker Notes</h2>
-    </hgroup>
-    <article>
-      <p>Press 'p' to toggle speaker notes.</p>
-    </article>
-  </slide>
-
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>See this amazing link: <a href="http://byclosure.com/">link</a>.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Presenter Mode</h2>
-    </hgroup>
-    <article>
-      <p>Add <code><a href="?presentme=true" target="_self">?presentme=true</a></code> to the URL to enabled presenter mode.
-      This setting is sticky, meaning refreshing the page will persist presenter
-      mode.</p>
-      <p>Hit <code><a href="?presentme=false" target="_self">?presentme=false</a></code> to disable presenter mode.</p>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Image</h2>
-    </hgroup>
-    <article>
-      <img src="images/chart.png" class="reflect" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Image (Centered horz/vert)</h2>
+      <h2>SVG and HTML5</h2>
     </hgroup>
     <article class="flexbox vcenter">
-      <img src="images/barchart.png" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
+      <img src="images/molly_tweet.png"/>
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>SVG and HTML5</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img  src="images/html_svg_inline.svg" />
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Table Option A</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>in a nutshell</h2>
+    </hgroup>
+    <article class="flexbox">
+      <ul class="build">
+        <li>Open Standard (W3C)</li>
+        <li>Describes 2D vector images in a declarative form</li>  
+        <li>Full DOM support
+          <ul>
+            <li>Scripting</li>
+            <li>CSS Styling</li>
+            <li>Event Model</li>
+          </ul>
+        </li>
+        <li>Modern Browser Support (plugins free)
+            <ul>
+              <li>Mobile included (kinda)</li>
+            </ul>
+        </li>
+
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Current support</h2>
     </hgroup>
     <article>
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
+      <iframe src="http://caniuse.com/#search=svg"></iframe>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Table Option A (Smaller Text)</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Inline - Before & after HTML5</h2>
     </hgroup>
     <article class="smaller">
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
+      <pre class="prettyprint" data-lang="html">
+<b>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" 
+"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
+  &lt;html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:svg="http://www.w3.org/2000/svg"></b>
+  &lt;head>&lt;/head>
+  &lt;body>
+  &lt;div id="container">
+  <b> &lt;svg:svg width="100" height="100" >
+    &lt;svg:rect y="10" X="10" width="20" height="20"/>
+   &lt;/svg:svg></b>
+  &lt;/div>
+  &lt;/body>
+  &lt;/html>
+      </pre>
+      <pre class="prettyprint" data-lang="html">
+<b>&lt;!DOCTYPE HTML>
+&lt;html></b>
+&lt;head>&lt;/head>
+&lt;body>
+ &lt;div id="container">
+   <b>&lt;svg width="100" height="100" >
+      &lt;rect y="10" X="10" width="20" height="20"/>
+   &lt;/svg></b>
+  &lt;/div>
+&lt;/body>
+&lt;/html>
+      </pre>
+    </article>
+  </slide>
+<!--
+  SVG PRIMITIVES
+-->
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/byclosure_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>SVG PRIMITVES</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Rectangle</h2>
+    </hgroup>
+    <article class="vcenter">
+      <pre class="prettyprint" data-lang="html">
+
+      &lt;svg>
+       <b> &lt;rect x="350" y="50" height="100" width="200" fill="yellow" stroke="black"/></b>
+      &lt;/svg>
+
+      </pre>
+      <svg>
+        <rect x="350" y="50" height="100" width="200" fill="yellow" stroke="black"/>
+      </svg>
+    </article>
+  </slide> 
+
+  <slide>
+    <hgroup>
+      <h2>Circle and Ellipse</h2>
+    </hgroup>
+    <article class="vcenter">
+      <pre class="prettyprint" data-lang="html">
+
+      &lt;svg>
+       &lt;!-- center in cx,xy with radius r -->
+       <b>&lt;circle cx="250" cy="150" r="100" fill="yellow" stroke="black"/></b>
+       &lt;!-- center in cx,xy with radius rx,ry -->
+       <b>&lt;ellipse cx="650" cy="150" rx="100" ry="50" fill="red" stroke="black"/></b>
+      &lt;/svg>
+
+      </pre>
+        <svg>
+          <circle cx="250" cy="150" r="100" fill="yellow" stroke="black"/>
+          <ellipse cx="650" cy="150" rx="100" ry="50" fill="red" stroke="black"/>
+        </svg>
+    </article>
+  </slide> 
+
+  <slide>
+    <hgroup>
+      <h2>Line and Polyline</h2>
+    </hgroup>
+    <article class="vcenter">
+      <pre class="prettyprint" data-lang="html">
+
+      &lt;svg>
+       &lt;!-- from point x1,y1 to point x2,y2-->
+       <b>&lt;line x1="0" y1="0" x2="1000" y2="250" stroke-width="5" stroke="#000"/></b>
+       &lt;!-- from point x1,y1 to point xn,yn passing by xi,yi -->
+       <b>&lt;polyline points="0,0 300,100 600,300 800,250" 
+                 stroke-width="5" fill="none" stroke="red" /></b>
+      &lt;/svg>
+
+      </pre>
+        <svg>
+          <line x1="0" y1="0" x2="800" y2="100" stroke-width="5" stroke="green"/>
+          <polyline points="0,0 300,100 600,150 800,100" stroke-width="5" fill="none" stroke="red" />
+        </svg>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Table Option B</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Polygon</h2>
+    </hgroup>
+    <article class="vcenter">
+      <pre class="prettyprint" data-lang="html">
+
+      &lt;svg>
+       &lt;!-- from point x1,y1 to point x1,y1 passing by xi,yi (auto close)-->
+       <b>&lt;polygon points="0,0 300,100 600,300 800,250" 
+                 stroke-width="5" fill="rgb(255,0,0,.5)" stroke="red" /></b>
+      &lt;/svg>
+
+      </pre>
+        <svg>
+          <polygon points="0,0 300,100 600,150 800,100" stroke-width="5" fill="rgba(255,0,0,.5)" stroke="red" />
+        </svg>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Exercise</h2>
+      <h3>Draw some primitives</h3>
     </hgroup>
     <article>
-      <table class="rows">
-        <tr>
-          <th>Header 1</th><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 2</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 3</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 4</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 5</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
+       <ul>
+        <li><code>git clone git@github.com:yarcub/svg-workshop-samples.git</code></li>
+        <li><code>npm install</code></li>
+        <li><code>node server.js</code></li>
+      </ul>
+      <ul>
+        <li>Edit primitives/primitives.html</li>
+        <li>Refresh http://localhost:8000/primitives/primitives.html to test</li>
+      </ul>
     </article>
   </slide>
 
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/byclosure_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Path</h2>
+    </hgroup>
+  </slide> 
+
   <slide>
     <hgroup>
-      <h2>Slide Styles</h2>
+      <h2>Path</h2>
     </hgroup>
-    <article class="smaller">
-      <div class="columns-2">
-        <ul>
-          <li class="red">class="red"</li>
-          <li class="red2">class="red2"</li>
-          <li class="red3">class="red3"</li>
-          <li class="blue">class="blue"</li>
-          <li class="blue2">class="blue2"</li>
-          <li class="blue3">class="blue3"</li>
-          <li class="green">class="green"</li>
-          <li class="green2">class="green2"</li>
-        </ul>
-        <ul>
-          <li class="green3">class="green3"</li>
-          <li class="yellow">class="yellow"</li>
-          <li class="yellow2">class="yellow2"</li>
-          <li class="yellow3">class="yellow3"</li>
-          <li class="gray">class="gray"</li>
-          <li class="gray2">class="gray2"</li>
-          <li class="gray3">class="gray3"</li>
-          <li class="gray4">class="gray4"</li>
-        </ul>
-      </div>
-      <div class="centered" style="margin-top:2em">
-        I am centered text with a <button>Button</button> and <button disabled>Disabled</button> button.
-      </div>
+    <article>
+      <p>Sequential group of commands</p>
+      <ul>
+        <li>Move to</li>
+        <li>Line to</li>
+        <li>Close path</li>
+        <li>Bézier (cubic or quadratic) curve to</li>
+        <li>Elliptical arc to</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide >
+    <hgroup>
+      <h2>Path</h2>
+    </hgroup>
+    <article class="vcenter smaller">
+      <pre class="prettyprint" data-lang="html">
+
+      &lt;svg>
+       &lt;!-- 
+        Move to 200,300
+        Quadratic Bézier to 400,50 with control point 600,300
+        Smooth Quadric Bézier to 1000,300 (mirror last control point)
+        -->
+       <b>&lt;path d="M200,300 Q400,50 600,300 T1000,300"
+                fill="none" stroke="red" stroke-width="5"  /></b>
+      &lt;/svg>
+
+      </pre>
+        <svg viewBox="0 0 1200 600" >
+          <g transform="scale(0.5),translate(550, -150)">
+          <path d="M200,300 Q400,50 600,300 T1000,300"
+                fill="none" stroke="red" stroke-width="5"  />
+          <!-- End points -->
+          <g fill="black" >
+            <circle cx="200" cy="300" r="10"/>
+            <circle cx="600" cy="300" r="10"/>
+            <circle cx="1000" cy="300" r="10"/>
+          </g>
+          <!-- Control points and lines from end points to control points -->
+          <g fill="#888888" >
+            <circle cx="400" cy="50" r="10"/>
+            <circle cx="800" cy="550" r="10"/>
+          </g>
+          <path d="M200,300 L400,50 L600,300 
+                   L800,550 L1000,300"
+                fill="none" stroke="#888888" stroke-width="2" />
+          </g>
+        </svg>
+    </article>
+  </slide>
+
+  <slide >
+    <hgroup>
+      <h2>Text & Paths</h2>
+    </hgroup>
+    <article class="vcenter smaller">
+      <pre class="prettyprint" data-lang="html">
+       &lt;svg>
+        &lt;def>
+          &lt;path id="curve" d="M100,100 Q350,0 450,100 T800,100"
+              fill="none" stroke="rgba(255,0,0,0.5)" stroke-width="2"  />
+        &lt;/def>
+        <b>&lt;text>
+          &lt;textPath id="myText" xlink:href="#curve">
+            Look, i'm text following a bézier curve! Select me =)
+          &lt;/textPath> 
+        &lt;/text></b>
+        &lt;use xlink:href="#curve">&lt;/use>
+      &lt;/svg>
+      </pre>
+        <svg>
+          <def>
+            <path id="curve" d="M100,100 Q350,-50 450,100 T800,100"
+                fill="none" stroke="rgba(255,0,0,0.2)" stroke-width="2"  />
+          </def>
+          <text>
+            <textPath id="myText" xlink:href="#curve">Look, i'm text following a bézier curve! Select me =)</textPath> 
+          </text>
+          <use xlink:href="#curve"></use>
+        </svg>
     </article>
   </slide>
 
   <slide class="segue dark nobackground">
     <aside class="gdbar"><img src="images/byclosure_icon_128.png"></aside>
     <hgroup class="auto-fadein">
-      <h2>Segue Slide</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Groups & Transformations</h2>
     </hgroup>
-  </slide>
+  </slide> 
 
-  <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
+  <slide >
     <hgroup>
-      <h2 class="white">Full Image (with Optional Header)</h2>
+      <h2>Groups</h2>
+      <h3>treat elements as one</h3>
     </hgroup>
-    <footer class="source white">www.flickr.com/photos/25797459@N06/5438799763/</footer>
+    <article class="vcenter smaller">
+      <pre class="prettyprint" data-lang="html">
+       &lt;svg>
+          <b>&lt;g fill="yellow" stroke="red"></b>
+            &lt;circle cx="50" cy="50" r="50"/>
+            &lt;rect x="150" y="0" width="100" height="100"/>
+          <b>&lt;/g></b>
+        &lt;/svg>
+      </pre>
+        <svg>
+          <g fill="yellow" stroke="red">
+            <circle cx="50" cy="50" r="50"/>
+            <rect x="150" y="0" width="100" height="100"/>
+          </g>
+        </svg>
+    </article>
   </slide>
 
-  <slide class="segue dark quote nobackground">
-    <aside class="gdbar right bottom"><img src="images/byclosure_icon_128.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <q>
-        This is an example of quote text.
-      </q>
-      <div class="author">
-        Name<br>
-        Company
-      </div>
+  <slide >
+    <hgroup>
+      <h2>Transformations</h2>
+      <h3>translation, add (x,y) to positions</h3>
+    </hgroup>
+    <article class="vcenter smaller">
+      <pre class="prettyprint" data-lang="html">
+       &lt;svg>
+          &lt;g fill="yellow" stroke="red" <b>transform="translate(100,150)"</b>>
+            &lt;circle cx="50" cy="50" r="50"/>
+            &lt;rect x="150" y="0" width="100" height="100"/>
+          &lt;/g>
+        &lt;/svg>
+      </pre>
+        <svg>
+          <g fill="yellow" stroke="red">
+            <circle cx="50" cy="50" r="50"/>
+            <rect x="150" y="0" width="100" height="100" />
+            <animateTransform
+                  attributeName="transform"
+                  begin="0s"
+                  dur="2s"
+                  type="translate"
+                  from="0,0"
+                  to="100,150"
+                  decelerate=".25"
+                  autoReverse="true"
+                  repeatCount="indefinite"
+                  />
+          </g>
+        </svg>
+    </article>
+  </slide>
+
+  <slide >
+    <hgroup>
+      <h2>Transformations</h2>
+      <h3>rotation, revolves z degrees around (x,y)</h3>
+    </hgroup>
+    <article class="vcenter smaller">
+      <pre class="prettyprint" data-lang="html">
+       &lt;svg>
+          &lt;g fill="yellow" stroke="red" <b>transform="rotate(360, 125, 50)"</b>>
+            &lt;circle cx="50" cy="50" r="50"/>
+            &lt;rect x="150" y="0" width="100" height="100"/>
+          &lt;/g>
+        &lt;/svg>
+      </pre>
+        <svg>
+          <g transform="translate(300,100)">
+            <g fill="yellow" stroke="red">
+              <circle cx="50" cy="50" r="50"/>
+              <rect x="150" y="0" width="100" height="100" />
+              <animateTransform
+                    attributeName="transform"
+                    begin="0s"
+                    dur="2s"
+                    type="rotate"
+                    from="0 125 50"
+                    to="360 125 50"
+                    repeatCount="indefinite"
+                    />
+            </g>
+          </g>
+        </svg>
+    </article>
+  </slide>
+
+  <slide >
+    <hgroup>
+      <h2>Transformations</h2>
+      <h3>scale</h3>
+    </hgroup>
+    <article class="vcenter smaller">
+      <pre class="prettyprint" data-lang="html">
+       &lt;svg>
+          &lt;g fill="yellow" stroke="red" <b>transform="scale(0.5)"</b>>
+            &lt;circle cx="50" cy="50" r="50"/>
+            &lt;rect x="150" y="0" width="100" height="100"/>
+          &lt;/g>
+        &lt;/svg>
+      </pre>
+        <svg>
+          <g transform="translate(300,100)">
+            <g fill="yellow" stroke="red">
+              <circle cx="50" cy="50" r="50"/>
+              <rect x="150" y="0" width="100" height="100" />
+              <animateTransform
+                    attributeName="transform"
+                    begin="0s"
+                    dur="2s"
+                    type="scale"
+                    from="1,1"
+                    to="0.5,0.5"
+                    repeatCount="indefinite"
+                    />
+            </g>
+          </g>
+        </svg>
+    </article>
+  </slide>
+
+  <slide >
+    <hgroup>
+      <h2>Transformations</h2>
+      <h3>skew</h3>
+    </hgroup>
+    <article class="vcenter smaller">
+      <pre class="prettyprint" data-lang="html">
+       &lt;svg>
+          &lt;g fill="yellow" stroke="red" <b>transform="skewY(20)"</b>>
+            &lt;circle cx="50" cy="50" r="50"/>
+            &lt;rect x="150" y="0" width="100" height="100"/>
+          &lt;/g>
+        &lt;/svg>
+      </pre>
+        <svg>
+          <g transform="translate(300,100)">
+            <g fill="yellow" stroke="red">
+              <circle cx="50" cy="50" r="50"/>
+              <rect x="150" y="0" width="100" height="100" />
+              <animateTransform
+                    attributeName="transform"
+                    begin="0s"
+                    dur="2s"
+                    type="skewY"
+                    from="0"
+                    to="-20"
+                    repeatCount="indefinite"
+                    />
+            </g>
+          </g>
+        </svg>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/byclosure_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Definitions</h2>
+    </hgroup>
+  </slide> 
+
+  <slide >
+    <hgroup>
+      <h2>Definitions</h2>
+    </hgroup>
+    <article class="vcenter smaller">
+      <pre class="prettyprint" data-lang="html">
+       &lt;svg>
+         &lt;def>
+          &lt;!-- Non rendered content -->
+         &lt;/def>
+       &lt;/svg>
+      </pre>
+        <p>Common use cases</p>
+        <ul>
+          <li>Gradients</li>
+          <li>Text paths (already seen on <a href="/#21">slide 21</a>)</li>
+          <li>Clipping paths</li>
+          <li>Repeated elements</li>
+        <ul>
+    </article>
+  </slide>
+
+  <slide >
+    <hgroup>
+      <h2>Reusing elements</h2>
+    </hgroup>
+    <article class="vcenter smaller">
+      <pre class="prettyprint" data-lang="html">
+       &lt;svg>
+        <b>&lt;defs>
+          &lt;linearGradient id="grad" gradientTransform="rotate(90 .5 .5)">
+            &lt;stop offset=".3" stop-color="red">&lt;/stop>
+            &lt;stop offset="1" stop-color="orange">&lt;/stop>
+          &lt;/linearGradient>
+          &lt;circle id="foo" fill="orange" cx="50" cy="50" r="40" />
+        &lt;/defs></b>
+        &lt;use xlink:href="#foo" />
+        &lt;use xlink:href="#foo" transform="translate(100, 0)" />
+        <b>&lt;use xlink:href="#foo" transform="translate(200, 0)" /></b>
+        &lt;use xlink:href="#foo" transform="translate(300, 0)" />
+        &lt;use xlink:href="#foo" transform="translate(400, 0)" />
+        &lt;use xlink:href="#foo" transform="translate(500, 0)" />
+        &lt;use xlink:href="#foo" transform="translate(600, 0)" />
+      &lt;/svg>
+      </pre>
+      <svg>
+        <defs>
+          <linearGradient id="grad" gradientTransform="rotate(90 .5 .5)">
+            <stop offset=".3" stop-color="red"></stop>
+            <stop offset="1" stop-color="orange"></stop>
+          </linearGradient>
+          <circle id="foo" fill="url(#grad)" cx="50" cy="50" r="40" />
+        </defs>
+        <use xlink:href="#foo" />
+        <use xlink:href="#foo" transform="translate(100, 0)" />
+        <use xlink:href="#foo" transform="translate(200, 0)" />
+        <use xlink:href="#foo" transform="translate(300, 0)" />
+        <use xlink:href="#foo" transform="translate(400, 0)" />
+        <use xlink:href="#foo" transform="translate(500, 0)" />
+        <use xlink:href="#foo" transform="translate(600, 0)" />
+      </svg>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/byclosure_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Scripting</h2>
+    </hgroup>
+  </slide> 
+
+  <slide >
+    <hgroup>
+      <h2>Scripting</h2>
+      <h3>User interaction</h3>
+    </hgroup>
+    <article class="vcenter smaller">
+      <pre class="prettyprint" data-lang="javascript">
+        var rect = document.querySelector("#foo");
+        var label = document.querySelector("#label");
+        
+        rect.addEventListener('mouseover', function(event){
+          label.textContent = "Over";
+          //SVG DOM, faster
+          rect.width.baseVal.value = 500; 
+        });
+
+        rect.addEventListener('mouseout', function(event){
+          label.textContent = "Out";
+          //HTML DOM, slower, needs to convert string to int
+          rect.setAttribute("width", "200"); 
+        });
+      </pre>
+      <iframe src="samples/mouse_events.html" style="overflow:hidden;"></iframe>
+    </article>
+  </slide>
+
+  <slide >
+    <hgroup>
+      <h2>Scripting</h2>
+      <h3>Animation</h3>
+    </hgroup>
+    <article class="vcenter smaller">
+      <pre class="prettyprint" data-lang="javascript">
+
+        svg.addEventListener('click', function(event){
+
+          //Using JQuery
+          $(circle.cx.baseVal).finish();
+          $(circle.cy.baseVal).finish();
+
+          $(circle.cx.baseVal).animate({value: event.x}, 500, 'linear');
+          $(circle.cy.baseVal).animate({value: event.y}, 500, 'linear');
+
+        });
+      </pre>
+      <iframe src="samples/jsanimation.html" style="overflow:hidden;"></iframe>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Iframe</h2>
+      <h2>Exercise</h2>
     </hgroup>
     <article>
-      <iframe data-src="http://byclosure.com/"></iframe>
+      <ul>
+        <li>Open <a href="http://www.conheceracrise.com/">http://www.conheceracrise.com/indicador/21/contratos-de-trabalho</a></li>
+        <li>Try to recreate the pie chart</li>
+      </ul>
     </article>
   </slide>
 
-  <slide>
-    <article>
-      <iframe data-src="http://byclosure.com/"></iframe>
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/byclosure_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Tools</h2>
+      <h3>DRY</h3>
+    </hgroup>
+  </slide>
+
+  <slide >
+    <hgroup>
+      <h2>d3.js</h2>
+      <h3>Data Driven Documents</h3>
+    </hgroup>
+    <article class="">
+      <iframe src="http://d3js.org/" style="overflow:hidden;"></iframe>
     </article>
   </slide>
+
+  <slide >
+    <hgroup>
+      <h2>raphael.js</h2>
+      <h3>Raphaël—JavaScript Library</h3>
+    </hgroup>
+    <article class="">
+      <iframe src="http://raphaeljs.com/" style="overflow:hidden;"></iframe>
+    </article>
+  </slide>
+
+  <slide >
+    <hgroup>
+      <h2>Inkscape</h2>
+      <h3>Graphical editor</h3>
+    </hgroup>
+    <article class="">
+      <iframe src=" http://inkscape.org/" style="overflow:hidden;"></iframe>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/byclosure_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Why SVG?</h2>
+    </hgroup>
+  </slide>
+
+  <slide >
+    <hgroup>
+      <h2>Why SVG</h2>
+    </hgroup>
+    <article class="build">
+      <ul>
+        <li>Scale factor
+          <ul>
+            <li>Multiscreen applications</li>
+            <li>High Fidelity graphics</li>
+          </ul>
+        </li>
+        <li>Text Format
+          <ul>
+            <li>Accessibility</li>
+            <li>Version Control</li>
+            <li>Semantic + metadata</li>
+          </ul>
+        </li>
+        <li>Bandwidth
+          <ul>
+            <li>Small filesize</li>
+            <li>Runtime changes</li>
+            <li>Gzip encoded (.svgz)</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/byclosure_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>References</h2>
+    </hgroup>
+  </slide>
+
+  <slide >
+    <hgroup>
+      <h2>References</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li><a href="http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html">SVG Primer</a></li>
+        <li><a href="https://developer.mozilla.org/en/docs/SVG">Mozilla Developer Network</a></li>
+        <li><a href="http://docs.webplatform.org/wiki/svg">Web Platform</a></li>
+      </ul>
+    </article>
+  </slide>
+
+
+
 
   <slide class="thank-you-slide segue nobackground">
     <aside class="gdbar right"><img src="images/byclosure_icon_128.png"></aside>
     <article class="flexbox vleft auto-fadein">
       <h2>&lt;Thank You!&gt;</h2>
-      <p>Important contact information goes here.</p>
     </article>
     <p class="auto-fadein" data-config-contact>
       <!-- populated from slide_config.json -->
@@ -467,22 +857,5 @@ function helloWorld(world) {
   <slide class="backdrop"></slide>
 
 </slides>
-
-<script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
-
-<!--[if IE]>
-  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
-  <script>CFInstall.check({mode: 'overlay'});</script>
-<![endif]-->
 </body>
 </html>

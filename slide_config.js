@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Title Goes Here<br>Up To Two Lines',
-    subtitle: 'Subtitle Goes Here',
+    title: 'Workshop<br>SVG 101',
+    subtitle: 'XX SINFO',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
     enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.
@@ -18,12 +18,11 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Firstname Lastname',
-    company: 'Job Title, Byclosure',
-    gplus: 'Your G+',
-    twitter: 'YOUR TWITTER',
-    www: 'YOUR WWW',
-    github: 'YOUR Github'
+    name: 'Nuno Rosa',
+    company: 'Senior Software Developer, Byclosure',
+    gplus: 'gplus.to/yarcub',
+    twitter: 'twitter.com/yarcub',
+    github: 'github.com/yarcub'
   }/*, {
     name: 'Second Name',
     company: 'Job Title, Byclosure',
